@@ -207,6 +207,7 @@ in {
             };
             check = import ./functions/mkCheckOnlyPackage.nix packages.${checkProfile};
             clippy = import ./functions/mkClippyOnlyPackage.nix packages.${clippyProfile};
+            docs = import ./functions/mkDocsOnlyPackage.nix packages.${clippyProfile};
           }
         )
         d2nOutputs;
